@@ -1,0 +1,9 @@
+﻿[workspace]
+members = [
+    "src-tauri",
+    "src-tauri/crates/pptm-domain",
+    "src-tauri/crates/pptm-infra",
+    "src-tauri/crates/pptm-pipeline",
+    "src-tauri/crates/pptm-pptx",
+]
+resolver = "2"

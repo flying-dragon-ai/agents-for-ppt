@@ -1,0 +1,20 @@
+﻿[package]
+name = "agents-for-ppt"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "agents_for_ppt"
+path = "src/lib.rs"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "agents-for-ppt"
+path = "src/main.rs"
+
+[dependencies]
+pptm-domain = { path = "crates/pptm-domain" }
+pptm-infra = { path = "crates/pptm-infra" }
+pptm-pipeline = { path = "crates/pptm-pipeline" }
+pptm-pptx = { path = "crates/pptm-pptx" }

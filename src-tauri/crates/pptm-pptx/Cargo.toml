@@ -1,0 +1,10 @@
+﻿[package]
+name = "pptm-pptx"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+pptm-domain = { path = "../pptm-domain" }
