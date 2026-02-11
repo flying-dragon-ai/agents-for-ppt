@@ -1,4 +1,4 @@
-﻿[package]
+[package]
 name = "agents-for-ppt"
 version = "0.1.0"
 edition = "2021"
@@ -13,7 +13,19 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 name = "agents-for-ppt"
 path = "src/main.rs"
 
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
 [dependencies]
+tauri = { version = "2.0", features = [] }
+tauri-plugin-fs = "2.0"
+tauri-plugin-dialog = "2.0"
+tauri-plugin-shell = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.43", features = ["sync"] }
+tokio-util = "0.7"
+uuid = { version = "1.12", features = ["v4", "serde"] }
 pptm-domain = { path = "crates/pptm-domain" }
 pptm-infra = { path = "crates/pptm-infra" }
 pptm-pipeline = { path = "crates/pptm-pipeline" }

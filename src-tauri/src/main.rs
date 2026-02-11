@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    agents_for_ppt_lib::run()
+    agents_for_ppt::run()
 }
