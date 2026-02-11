@@ -1,0 +1,15 @@
+{
+  "name": "pptxgen-sidecar",
+  "version": "1.0.0",
+  "description": "PptxGenJS sidecar for PPT Master",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

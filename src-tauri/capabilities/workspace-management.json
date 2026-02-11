@@ -1,0 +1,17 @@
+{
+  "$schema": "https://tauri.app/v2/schemas/capability.schema.json",
+  "identifier": "workspace-management",
+  "description": "Capability for workspace and file system operations",
+  "windows": ["main"],
+  "permissions": [
+    "fs:default",
+    "fs:allow-read-dir",
+    "fs:allow-read-file",
+    "fs:allow-write-file",
+    "fs:allow-exists",
+    "fs:allow-mkdir",
+    "dialog:default",
+    "dialog:allow-open",
+    "dialog:allow-save"
+  ]
+}

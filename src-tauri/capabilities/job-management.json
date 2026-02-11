@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tauri.app/v2/schemas/capability.schema.json",
+  "identifier": "job-management",
+  "description": "Capability for job management and pipeline execution",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:event:default",
+    "core:event:allow-emit",
+    "core:event:allow-listen"
+  ]
+}
